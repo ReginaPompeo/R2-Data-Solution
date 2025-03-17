@@ -1,5 +1,18 @@
 .homeContainer{
     display: flex;
     height: 100vh;
+    background-color: #011e11;
+    flex-direction: column;
+}
+
+.topContainer{
     background-color: aqua;
+    min-height: 4rem;
+    max-height: 5rem;
+}
+
+.centerContainer{
+    background-color: chartreuse;
+    align-items: center;
+    margin: 5rem;
 }
