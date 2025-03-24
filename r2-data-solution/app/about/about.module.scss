@@ -1,17 +1,60 @@
+$primary-color: #011e11;
+$secondary-color: #00fd5e;
+$tertiary-color: #ffffff;
+
+$primary-font: 'DM Sans', sans-serif;
+$secondary-font: 'Poppins', sans-serif;
+
 .aboutContainer{
-    background-color: blueviolet;
+    background-color: $secondary-color;
     height: 100vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
+    padding: 6rem 3rem;
 }
 
 .leftContainer{
-    background-color: aqua;
+    display: flex;
     width: 50%;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 .rightContainer{
-    background-color: brown;
     width: 50%;
+    height: 100%;
+}
+
+.title{
+    padding: 2rem;
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.subtitle{
+    padding: 3rem 2rem;
+    color: $tertiary-color;
+    font-family: $primary-font;
+    font-size: 1rem;
+    font-weight: bold;
+}
+
+.text{
+    padding: 0  2rem;
+    text-align: justify;
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: 1.5rem;
+}
+
+.banner {
+    max-width: 60rem; /* Limita a largura máxima */
+    width: 100%; /* Ajusta dinamicamente sem ultrapassar `max-width` */
+    max-height: 100%;
+    height: auto;
+    object-fit: contain; /* Garante que a imagem se ajuste dentro do container */
 }

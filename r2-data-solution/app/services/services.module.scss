@@ -1,0 +1,46 @@
+.serviceContainer{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    flex-direction: column;
+    padding: 6rem 3rem;
+    background-color: aqua;
+    gap: 3rem;
+}
+
+.title{
+    background-color: blueviolet;
+}
+
+.blockSpace{
+    display: flex;
+    background-color: burlywood;
+    width: 100%;
+    height: 100%;
+    flex-wrap: wrap;
+    gap: 30px; 
+    justify-content: center;
+    align-items: center;
+}
+
+.blockContainer{
+    display: flex;
+    background-color:blue;
+    height: 100%;
+    width: 100%;
+    width: calc(33.33% - 30px); /* Faz com que caibam 3 por linha */
+    max-width: 400px;
+    max-height: 200px;
+    flex-grow: 1; /* Faz com que os blocos cresçam uniformemente */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+}
+
+.titleService, .iconSpace{
+    background-color: cadetblue;
+    height: 50%;
+    width: fit-content;
+    text-align: center;
+}

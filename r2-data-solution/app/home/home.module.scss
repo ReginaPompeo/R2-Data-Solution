@@ -79,7 +79,7 @@ $secondary-font: 'Poppins', sans-serif;
 .banner {
     max-width: 60rem; /* Limita a largura máxima */
     width: 100%; /* Ajusta dinamicamente sem ultrapassar `max-width` */
-    max-height: 60rem;
+    max-height: 80rem;
     height: auto;
     object-fit: contain; /* Garante que a imagem se ajuste dentro do container */
 }
