@@ -1,0 +1,17 @@
+.aboutContainer{
+    background-color: blueviolet;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leftContainer{
+    background-color: aqua;
+    width: 50%;
+}
+
+.rightContainer{
+    background-color: brown;
+    width: 50%;
+}
