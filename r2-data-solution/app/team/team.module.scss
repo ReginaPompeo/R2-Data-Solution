@@ -1,5 +1,12 @@
+$primary-color: #011e11;
+$secondary-color: #00fd5e;
+$tertiary-color: #ffffff;
+
+$primary-font: 'DM Sans', sans-serif;
+$secondary-font: 'Poppins', sans-serif;
+
 .teamContainer{
-    background-color: blue;
+    background-color: $secondary-color;
     height: 100vh;
     display: flex;
     flex-direction: column;
@@ -9,44 +16,65 @@
 }
 
 .title{
-    background-color: green;
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: 2rem;
+    font-weight: bold;
 }
 
 .blockSpace{
     display: flex;
     width: 100%;
     flex-wrap: wrap;
-    gap: 30px; 
+    gap: 10rem; 
     justify-content: center;
     align-items: center;
-    background-color: brown;
     padding: 0 5rem;
 }
 
 .blockContainer {
-    width: calc(50% - 20px);
-    max-width: 100%;
-    min-height: 250px; /* Altura definida */
-    height: auto;
+    width: calc(30% - 100px);
+    max-width: 50%;
+    min-height: 350px; /* Altura definida */
+    height: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border-radius: 10px;
-    background-color: aqua;
+    background-color: $primary-color;
 }
 
-.textTeam, .nameTeam{
-    background-color: cadetblue;
+.textContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
     height: 100%;
     width: fit-content;
     text-align: center;
+    margin: 20px 10px;
+}
+
+.nameTeam{
+    text-align: center;
+    color: $tertiary-color;
+    font-family: $secondary-font;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+
+.textTeam{
+    text-align: center;
+    color: $tertiary-color;
+    font-family: $primary-color;
+    font-size: 0.5rem;
+
 }
 
 .imageSpace {
-    background-color: pink;
     height: 100%; /* Definindo altura para o contêiner */
     width: 100%; /* Definindo largura para o contêiner */
+    min-height: 300px;
+    min-width: 200px;
     position: relative;
 }
 
@@ -54,8 +82,7 @@
     position: absolute;  /* A imagem ocupará todo o espaço do contêiner */
     top: 0;
     left: 0;
-    width: auto;
-    height: auto;
+    width: 100%;
+    height: 100%;
     object-fit: cover; /* Faz com que a imagem cubra o contêiner sem distorção */
-    border-radius: 10px;
 }
