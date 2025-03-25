@@ -28,7 +28,7 @@ $secondary-font: 'Poppins', sans-serif;
 }
 
 .title{
-    padding: 2rem;
+    padding: 0 1rem;
     color: $primary-color;
     font-family: $primary-font;
     font-size: 1.5rem;
@@ -36,7 +36,7 @@ $secondary-font: 'Poppins', sans-serif;
 }
 
 .subtitle{
-    padding: 3rem 2rem;
+    padding: 1rem;
     color: $tertiary-color;
     font-family: $primary-font;
     font-size: 1rem;
@@ -44,7 +44,7 @@ $secondary-font: 'Poppins', sans-serif;
 }
 
 .text{
-    padding: 0  2rem;
+    padding: 1rem;
     text-align: justify;
     color: $primary-color;
     font-family: $primary-font;

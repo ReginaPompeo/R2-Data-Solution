@@ -1,8 +1,10 @@
 import styles from './team.module.scss'
+import Image from 'next/image';
+import ImageTeam1 from '../../public/Image-Team-1.svg';
 
 const team = [
-    { image: '🔧', text: 'Regina Pompeo' },
-    { image: '💡', text: 'Reginaldo Alves' }
+    { image: ImageTeam1, name: 'Regina Pompeo', text: 'Regina Pompeo' },
+    { image: ImageTeam1, name: 'Reginaldo Alves', text: 'Reginaldo Alves' }
 ];
 
 export default function Team(){
@@ -12,18 +14,25 @@ export default function Team(){
                 aaaaa
             </div>
             <div className={styles.blockSpace}>
-                <div className={styles.blockContainer}>
-                    {Array.from({ length: 2 }).map((_, index) => (
-                        <div key={index} className={styles.blockContainer}>
-                            <div className={styles.imageSpace}>
-                            <h1>{team[index % 2].image}</h1>
-                            </div>
-                        <div className={styles.textTeam}>
-                            <h1>{team[index % 2].text}</h1>
-                            </div>
+                {team.map((team, index) => (
+                    <div key={index} className={styles.blockContainer}>
+                        <div className={styles.imageSpace}>
+                        <Image 
+                            className={styles.teamImage}
+                            src={team.image} 
+                            alt={team.text} 
+                            fill // Faz a imagem preencher todo o container
+                            objectFit="cover"
+                        />
                         </div>
-                    ))}
-                </div>
+                        <div className={styles.nameTeam}>
+                            <h1>{team.name}</h1>
+                        </div>
+                        <div className={styles.textTeam}>
+                            <h1>{team.text}</h1>
+                        </div>    
+                    </div>
+                ))}
             </div>
         </div>
     )

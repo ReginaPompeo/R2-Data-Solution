@@ -1,6 +1,11 @@
 .teamContainer{
     background-color: blue;
     height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 6rem 3rem;
+    gap: 3rem;
 }
 
 .title{
@@ -8,17 +13,49 @@
 }
 
 .blockSpace{
-    background-color: blanchedalmond;
-}
-
-.blockContainer{
-    background-color: pink;
-}
-
-.imageSpace{
-    background-color: cadetblue;
-}
-
-.textTeam{
+    display: flex;
+    width: 100%;
+    flex-wrap: wrap;
+    gap: 30px; 
+    justify-content: center;
+    align-items: center;
     background-color: brown;
+    padding: 0 5rem;
+}
+
+.blockContainer {
+    width: calc(50% - 20px);
+    max-width: 100%;
+    min-height: 250px; /* Altura definida */
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    border-radius: 10px;
+    background-color: aqua;
+}
+
+.textTeam, .nameTeam{
+    background-color: cadetblue;
+    height: 100%;
+    width: fit-content;
+    text-align: center;
+}
+
+.imageSpace {
+    background-color: pink;
+    height: 100%; /* Definindo altura para o contêiner */
+    width: 100%; /* Definindo largura para o contêiner */
+    position: relative;
+}
+
+.teamImage {
+    position: absolute;  /* A imagem ocupará todo o espaço do contêiner */
+    top: 0;
+    left: 0;
+    width: auto;
+    height: auto;
+    object-fit: cover; /* Faz com que a imagem cubra o contêiner sem distorção */
+    border-radius: 10px;
 }
