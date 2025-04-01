@@ -15,33 +15,33 @@ $secondary-font: 'Poppins', sans-serif;
 }
 
 .topContainer{
-    min-height: 5rem;
-    max-height: 15rem;
     width: 100%;
+    background-color: aqua; // Apagar depois
 }
 
 .logoContainer {
-    position: relative; // Necessário para o `fill` do Next.js funcionar
     min-height: 5rem;
     height: auto;
-    width: 30%;
+    width: 50%;
+    background-color: chocolate; // Apagar depois
+    justify-content: flex-start;
+    align-items: center;
+    display: flex;
   }
   
   .logo {
-    object-fit:cover; // Ou `cover` se quiser cobrir todo o espaço
-    max-width: 10rem;
-    max-height: 5rem;
-    margin-left: 3rem;
-    margin-top: 1rem;
+    object-fit: contain;
  }
 
 .centerContainer{
     align-items: center;
     justify-content: space-between;
     margin: 3rem;
-    display: flex;
-    gap: 10rem;
+    display: grid;
+    grid-template-columns: 70fr 30fr;
+    gap: 2rem;
     height: 100%;
+    background-color: brown; // Apagar depois
 }
 
 .leftContainer{
@@ -50,13 +50,14 @@ $secondary-font: 'Poppins', sans-serif;
     flex-direction: column;
     gap: 2rem;
     padding-left: 2rem;
+    background-color: cadetblue; // Apagar depois
 }
 
 .title{
     display: flex;
     height: 80%;
     font-family: $primary-font;
-    font-size: 4rem;
+    font-size: clamp(2rem, 5vw, 4rem);
     font-weight: bold;
     color: white;
     align-items: center;
@@ -65,20 +66,21 @@ $secondary-font: 'Poppins', sans-serif;
 .buttonContainer {
     height: 20%;
     display: flex;
-    justify-content: flex-start; /* Alinha os itens à esquerda */
+    justify-content: flex-start;
 }
 
 .rightContainer {
     display: flex;
-    justify-content: center; /* Centraliza o conteúdo horizontalmente */
-    align-items: center; /* Centraliza o conteúdo verticalmente */
+    justify-content: center; 
+    align-items: center; 
     width: 60%;
-    height: 100%; /* Evita que a div estique demais */
+    height: 100%;
+    background-color: blueviolet; // Apagar depois
 } 
 
 .banner {
-    max-width: 60rem; /* Limita a largura máxima */
-    width: 100%; /* Ajusta dinamicamente sem ultrapassar `max-width` */
+    max-width: 60rem; 
+    width: 100%;
     max-height: 80rem;
     height: auto;
     object-fit: contain; /* Garante que a imagem se ajuste dentro do container */
