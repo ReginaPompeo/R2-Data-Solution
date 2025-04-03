@@ -52,22 +52,27 @@ $secondary-font: 'Poppins', sans-serif;
     width: fit-content;
     text-align: center;
     margin: 20px 10px;
+    background-color:aqua ;
 }
 
 .nameTeam{
     text-align: center;
     color: $tertiary-color;
     font-family: $secondary-font;
-    font-size: 0.8rem;
-    font-weight: bold;
+    font-size: 1rem;
+    font-weight: 700;
+    text-transform: uppercase; /* Deixa tudo em maiúsculo */
+    letter-spacing: 1px; /* Dá um espaçamento bonito */
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
 }
 
 .textTeam{
     text-align: center;
     color: $tertiary-color;
-    font-family: $primary-color;
-    font-size: 0.5rem;
-
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 0.7rem;
+    font-weight: 300;
+    opacity: 10;
 }
 
 .imageSpace {

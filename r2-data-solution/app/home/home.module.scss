@@ -22,7 +22,7 @@ $secondary-font: 'Poppins', sans-serif;
     min-height: 2rem;
     max-height: 8rem;
     padding: 1rem;
-    //background-color: aqua;
+    //background-color: aqua; // Apagar depois
 }
 
 .logo {
@@ -55,7 +55,7 @@ $secondary-font: 'Poppins', sans-serif;
 .title{
     display: flex;
     width: 100%;
-    padding: 2rem;
+    padding: clamp(2rem, 5vw, 4rem);
     font-family: $primary-font;
     font-size: clamp(1.5rem, 5vw, 4rem);
     font-weight: bold;
@@ -64,11 +64,11 @@ $secondary-font: 'Poppins', sans-serif;
 }
 
 .buttonContainer {
-    padding: 2rem;
+    padding: clamp(2rem, 5vw, 4rem);
     display: flex;
     align-items: center;
     width: 100%;
-    //background-color: chartreuse;
+    //background-color: chartreuse; 
 }
 
 .rightContainer {
@@ -86,16 +86,19 @@ $secondary-font: 'Poppins', sans-serif;
     object-fit: contain; /* Garante que a imagem se ajuste dentro do container */
 }
 
-/* 🔹 Ajustes para telas menores */
+/* Ajustes para telas menores */
 @media (max-width: 768px) {
     .homeContainer {
         padding: 0 1rem;
-        gap: 1rem;
     }
 
     .topContainer {
         justify-content: center;
-        max-height: 6rem;
+        padding: 2.5rem;
+    }
+    
+    .logo {
+        width: clamp(110px, 10vw, 150px);
     }
 
     .centerContainer {
