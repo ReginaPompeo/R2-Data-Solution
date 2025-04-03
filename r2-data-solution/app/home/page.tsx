@@ -10,10 +10,8 @@ export default function Home(){
     return (
         <div className={styles.homeContainer}>
             <div className={styles.topContainer}>
-                <div className={styles.logoContainer}>
-                    <div>
-                        <Image src={Logo} alt="Logo" fill className={styles.logo} />
-                    </div>
+                <div>
+                    <Image src={Logo} alt="Logo" className={styles.logo} />
                 </div>
             </div>    
             <div className={styles.centerContainer}>
