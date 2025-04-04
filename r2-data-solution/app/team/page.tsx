@@ -17,12 +17,13 @@ export default function Team(){
                 {team.map((team, index) => (
                     <div key={index} className={styles.blockContainer}>
                         <div className={styles.imageSpace}>
-                        <Image 
+                        <Image
+                            src={team.image}
+                            alt={team.text}
+                            layout="responsive"
+                            width={400} // ou o tamanho natural da sua imagem
+                            height={400} // pode ser proporcional ao SVG
                             className={styles.teamImage}
-                            src={team.image} 
-                            alt={team.text} 
-                            fill // Faz a imagem preencher todo o container
-                            objectFit="cover"
                         />
                         </div>
                         <div className={styles.textContainer}>

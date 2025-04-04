@@ -6,42 +6,46 @@ $primary-font: 'DM Sans', sans-serif;
 $secondary-font: 'Poppins', sans-serif;
 
 .teamContainer{
-    background-color: $secondary-color;
+    //background-color: $secondary-color;
+    background-color: aqua;
     height: 100vh;
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 6rem 3rem;
-    gap: 3rem;
+    padding: clamp(1rem, 6vw, 6rem) clamp(1rem, 3vw, 3rem);
+    gap: clamp(1rem, 4vw, 5rem);
 }
 
 .title{
     color: $primary-color;
     font-family: $primary-font;
-    font-size: 2rem;
+    font-size: clamp(2rem, 5vw, 5rem);
     font-weight: bold;
+    background-color: blue;
 }
 
 .blockSpace{
     display: flex;
     width: 100%;
+    height: 100%;
     flex-wrap: wrap;
-    gap: 10rem; 
+    gap: clamp(1rem, 5vw, 5rem);
     justify-content: center;
     align-items: center;
-    padding: 0 5rem;
+    padding: 0 clamp(1rem, 5vw, 5rem);
+    background-color: coral;
 }
 
 .blockContainer {
-    width: calc(30% - 100px);
-    max-width: 50%;
-    min-height: 350px; /* Altura definida */
+    width: clamp(280px, 30%, 400px);
+    max-width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
     background-color: $primary-color;
+    background-color: bisque;
 }
 
 .textContainer{
@@ -50,44 +54,55 @@ $secondary-font: 'Poppins', sans-serif;
     gap: 12px;
     height: 100%;
     width: fit-content;
+    max-width: 100%;
     text-align: center;
-    margin: 20px 10px;
-    background-color:aqua ;
+    padding: 1rem;
+    background-color: chartreuse;
 }
 
 .nameTeam{
     text-align: center;
     color: $tertiary-color;
     font-family: $secondary-font;
-    font-size: 1rem;
-    font-weight: 700;
-    text-transform: uppercase; /* Deixa tudo em maiúsculo */
-    letter-spacing: 1px; /* Dá um espaçamento bonito */
-    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+    font-size: clamp(0.8rem, 1vw, 1rem);
+    font-weight: 300;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+    background-color: cadetblue;
+    height: 50%;
 }
 
 .textTeam{
     text-align: center;
     color: $tertiary-color;
-    color: rgba(255, 255, 255, 0.7);
-    font-size: 0.7rem;
-    font-weight: 300;
-    opacity: 10;
+    color: rgba(255, 255, 255, 0.8);
+    font-size: clamp(0.6rem, 1vw, 0.9rem);
+    font-weight: 100;
+    opacity: 1;
+    background-color: crimson;
+    line-height: 1.4;
+    height: 50%;
 }
 
 .imageSpace {
-    height: 100%; /* Definindo altura para o contêiner */
-    width: 100%; /* Definindo largura para o contêiner */
-    min-height: 300px;
-    min-width: 200px;
-    position: relative;
-}
-
-.teamImage {
-    position: absolute;  /* A imagem ocupará todo o espaço do contêiner */
-    top: 0;
-    left: 0;
     width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    box-sizing: border-box;
     height: 100%;
-    object-fit: cover; /* Faz com que a imagem cubra o contêiner sem distorção */
+    max-height: clamp(250px, 20vh, 500px); // define limite visual para o container também
 }
+  
+  
+  .teamImage {
+    width: auto;
+    height: 100%;
+    max-height: clamp(250px, 20vh, 500px); // ajusta conforme a tela
+    object-fit: contain;
+}
+  
+  
+  

@@ -11,14 +11,14 @@ $secondary-font: 'Poppins', sans-serif;
     min-height: 100vh;
     flex-direction: column;
     padding: clamp(2rem, 5vw, 6rem) clamp(1rem, 3vw, 3rem);
-    gap: 1rem;
+    gap: clamp(1rem, 10vw, 5rem);
     background-color: $primary-color;
 }
 
 .title{
     color: $secondary-color;
     font-family: $primary-font;
-    font-size: 2rem;
+    font-size: clamp(2rem, 5vw, 5rem);
     font-weight: bold;
     text-align: center;
 }
@@ -27,11 +27,11 @@ $secondary-font: 'Poppins', sans-serif;
     display: grid;
     width: 100%;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px;
+    gap: clamp(5rem, 7vw, 7rem);
     place-items: center; /* Centraliza os itens dentro do grid */
     margin: 0 auto;
     align-items: center;
-    padding: 20px;
+    padding: clamp(1rem, 2vw, 3rem);
 }
 
 .blockContainer {
@@ -84,8 +84,8 @@ $secondary-font: 'Poppins', sans-serif;
     align-items: center;
     display: flex;
     flex-direction: column;
-    gap: 20px;
-    padding: 5px;
+    gap: 10px;
+    padding: 0.5rem;
     border-radius: 10px;
 }
 
@@ -95,7 +95,7 @@ $secondary-font: 'Poppins', sans-serif;
     text-align: center;
     color: $primary-color;
     font-family: $secondary-font;
-    font-size: clamp(0.8rem, 1vw, 2rem);
+    font-size: clamp(0.8rem, 1vw, 1rem);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -107,7 +107,7 @@ $secondary-font: 'Poppins', sans-serif;
 .iconSpace{
     max-height: 100%;
     width: clamp(100px, 10vw, 150px);
-    height: auto; 
+    height: auto;
 }
 
 

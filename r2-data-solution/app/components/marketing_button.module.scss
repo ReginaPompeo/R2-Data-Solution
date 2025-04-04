@@ -15,7 +15,7 @@ $secondary-font: 'Roboto', sans-serif;
     color: $primary-color;
     width: 80%;
     font: $secondary-font;
-    font-size: 1rem;
+    font-size: clamp(1rem, 2vw, 1.5rem);
     font-weight: bold;
     max-height: 3rem;
     border: 3.5px solid transparent;
