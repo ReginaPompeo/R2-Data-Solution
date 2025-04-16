@@ -4,7 +4,7 @@ import ImageTeam1 from '../../public/Image-Team-1.svg';
 
 const team = [
     { image: ImageTeam1, name: 'Regina Pompeo', text: 'Formada em Análise e Desenvolvimento de Sistemas' },
-    { image: ImageTeam1, name: 'Reginaldo Alves', text: 'Reginaldo Alves' }
+    { image: ImageTeam1, name: 'Regina Pompeo', text: 'Formada em Análise e Desenvolvimento de Sistemas' }
 ];
 
 export default function Team(){
@@ -21,8 +21,8 @@ export default function Team(){
                             src={team.image}
                             alt={team.text}
                             layout="responsive"
-                            width={400} // ou o tamanho natural da sua imagem
-                            height={400} // pode ser proporcional ao SVG
+                            width={200} // ou o tamanho natural da sua imagem
+                            height={200} // pode ser proporcional ao SVG
                             className={styles.teamImage}
                         />
                         </div>

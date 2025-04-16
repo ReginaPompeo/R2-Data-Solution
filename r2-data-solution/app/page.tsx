@@ -3,6 +3,7 @@ import About from './about/page';
 import Services from './services/page';
 import Team from './team/page';
 import Differences from './differences/page';
+import Mission from './mission/page';
 
 export default function LandingPage() {
   return (
@@ -12,6 +13,7 @@ export default function LandingPage() {
     <Services/>
     <Team/>
     <Differences/>
+    <Mission/>
    </div>
   );
 }

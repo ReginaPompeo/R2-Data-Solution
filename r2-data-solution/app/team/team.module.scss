@@ -6,61 +6,72 @@ $primary-font: 'DM Sans', sans-serif;
 $secondary-font: 'Poppins', sans-serif;
 
 .teamContainer{
-    //background-color: $secondary-color;
-    background-color: aqua;
-    height: 100vh;
+    background-color: $secondary-color;
+    //background-color: blue;  COR TESTE
     display: flex;
     flex-direction: column;
+    min-height: 100vh;
+    justify-content: center;
     align-items: center;
-    padding: clamp(1rem, 6vw, 6rem) clamp(1rem, 3vw, 3rem);
-    gap: clamp(1rem, 4vw, 5rem);
+    padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 3vw, 3rem);
+    gap: clamp(3rem, 10vw, 10rem);
 }
 
 .title{
     color: $primary-color;
+    //background-color: coral; COR TESTE
     font-family: $primary-font;
     font-size: clamp(2rem, 5vw, 5rem);
-    font-weight: bold;
-    background-color: blue;
+    font-weight: bold; 
+    text-align: center;
 }
 
 .blockSpace{
+    //background-color: cadetblue; //COR TESTE
     display: flex;
-    width: 100%;
-    height: 100%;
     flex-wrap: wrap;
-    gap: clamp(1rem, 5vw, 5rem);
+    flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 0 clamp(1rem, 5vw, 5rem);
-    background-color: coral;
+    gap: clamp(2rem, 15vw, 15rem);
+    padding: 0 clamp(1rem, 2vw, 2rem);
+    height: 100%;
 }
 
-.blockContainer {
-    width: clamp(280px, 30%, 400px);
+.blockContainer{
+    //background-color: #00fd5e; COR TESTE
+    width: clamp(280px, 30vw, 400px);
     max-width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    flex-direction: column;
     background-color: $primary-color;
-    background-color: bisque;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageSpace{
+    //background-color: chocolate; COR TESTE
+    height: fit-content;
+    width: 100%;
+}
+
+.teamImage{
+    width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 .textContainer{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    height: 100%;
-    width: fit-content;
-    max-width: 100%;
+    //background-color: blueviolet; COR TESTE
     text-align: center;
-    padding: 1rem;
-    background-color: chartreuse;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    width: 100%;
+    flex-direction: column;
+    padding: 10px 0;
 }
 
 .nameTeam{
+    word-break: break-all;
+    word-break: break-word;
     text-align: center;
     color: $tertiary-color;
     font-family: $secondary-font;
@@ -69,40 +80,17 @@ $secondary-font: 'Poppins', sans-serif;
     text-transform: uppercase;
     letter-spacing: 0.5px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
-    background-color: cadetblue;
-    height: 50%;
 }
 
 .textTeam{
+    word-break: break-all;
+    word-break: break-word;
     text-align: center;
     color: $tertiary-color;
     color: rgba(255, 255, 255, 0.8);
     font-size: clamp(0.6rem, 1vw, 0.9rem);
     font-weight: 100;
     opacity: 1;
-    background-color: crimson;
     line-height: 1.4;
-    height: 50%;
 }
 
-.imageSpace {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding: 0.5rem;
-    box-sizing: border-box;
-    height: 100%;
-    max-height: clamp(250px, 20vh, 500px); // define limite visual para o container também
-}
-  
-  
-  .teamImage {
-    width: auto;
-    height: 100%;
-    max-height: clamp(250px, 20vh, 500px); // ajusta conforme a tela
-    object-fit: contain;
-}
-  
-  
-  
