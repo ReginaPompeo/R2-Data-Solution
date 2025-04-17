@@ -1,7 +1,6 @@
 import styles from './home.module.scss';
 import React from "react";
 import Image from "next/image";
-import Logo from '../../public/logo-r2.svg';
 import MarketingButton from '@/components/marketing_button';
 import ImageBanner from '../../public/photo-banner.svg';
 

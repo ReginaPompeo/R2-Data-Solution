@@ -5,10 +5,7 @@ $tertiary-color: #ffffff; // branco
 $primary-font: 'DM Sans', sans-serif;
 $secondary-font: 'Poppins', sans-serif;
 
-body {
-  background-color: $primary-color; // fundo escuro da tela
-  color: $tertiary-color; // texto claro por padrão
-}
+
 
 .form {
   display: flex;
