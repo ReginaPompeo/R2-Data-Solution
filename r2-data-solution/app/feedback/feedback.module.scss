@@ -1,0 +1,84 @@
+$primary-color: #011e11;
+$secondary-color: #00fd5e;
+$tertiary-color: #ffffff;
+
+$primary-font: 'DM Sans', sans-serif;
+$secondary-font: 'Poppins', sans-serif;
+
+.feedbackContainer {
+    display: flex;
+    min-height: 100vh;
+    background-color: $secondary-color;
+    flex-direction: row;
+    padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 3vw, 3rem);
+    gap: clamp(1rem, 10vw, 10rem);
+    width: 100%;
+}
+
+.title {
+    background-color: $secondary-color;
+    width: 40%;
+    display: flex;
+    justify-content: center;
+    font-family: $primary-font;
+    color: $primary-color;
+    font-size: clamp(2rem, 4vw, 4rem);
+    font-weight: bold;
+}
+
+.clientContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    //background-color: antiquewhite;
+    padding: 1rem;
+    gap: 5rem;
+}
+
+.clientCard {
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    //box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    min-width: 200px;
+    //background-color: aqua;
+}
+
+.nameTextContainer {
+    display: flex;
+    align-items: center;  /* Para alinhar verticalmente */
+    width: 100%;
+}
+
+.nameClient {
+    font-weight: bold;
+    font-family: $secondary-font;
+    font-size: 2rem;
+    color: $primary-color;
+    flex: 1; /* O nome ocupa 50% do espaço */
+    padding-right: 2rem; /* Dá um pequeno espaço entre o nome e o texto */
+}
+
+.textClient {
+    font-family: $primary-font;
+    font-size: 1.5rem;
+    color: $primary-color;
+    flex: 2; /* O texto ocupa o espaço restante */
+    text-align: left; /* Alinha o texto à esquerda */
+}
+
+@media (max-width: 600px) {
+    .feedbackContainer {
+        flex-direction: column;
+        justify-content: center;
+        padding: 1rem;
+    }
+    
+    .title { 
+        width: 100%;
+    }
+
+}

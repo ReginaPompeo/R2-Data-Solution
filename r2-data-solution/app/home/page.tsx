@@ -8,12 +8,7 @@ import ImageBanner from '../../public/photo-banner.svg';
 
 export default function Home(){
     return (
-        <div className={styles.homeContainer}>
-            <div className={styles.topContainer}>
-                <div>
-                    <Image src={Logo} alt="Logo" className={styles.logo} />
-                </div>
-            </div>    
+        <div className={styles.homeContainer}> 
             <div className={styles.centerContainer}>
                 <div className={styles.leftContainer}>
                     <div className={styles.title}>

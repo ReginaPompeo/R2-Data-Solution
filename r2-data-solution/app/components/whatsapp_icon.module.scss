@@ -1,0 +1,22 @@
+.whatsAppIcon {
+    position: fixed; /* Fixar o ícone */
+    bottom: 20px;    /* Distância do fundo */
+    right: 20px;     /* Distância da direita */
+    background-color: #25D366; /* Cor do fundo */
+    padding: 10px;   /* Espaçamento interno */
+    border-radius: 50%; /* Deixa o ícone redondo */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra sutil */
+    cursor: pointer; /* Aponta que é clicável */
+    transition: transform 0.3s ease; /* Animação suave ao passar o mouse */
+    z-index: 9999;
+
+    &:hover {
+      transform: scale(1.1); /* Aumenta o ícone ao passar o mouse */
+    }
+
+    svg {
+        display: block; /* Garante que o ícone será exibido corretamente */
+        color: #ffffff; /* Cor do ícone */
+    }
+  }
+  

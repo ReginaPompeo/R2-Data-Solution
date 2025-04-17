@@ -1,0 +1,149 @@
+$primary-color: #011e11;
+$secondary-color: #00fd5e;
+$tertiary-color: #ffffff;
+
+$primary-font: 'DM Sans', sans-serif;
+$secondary-font: 'Poppins', sans-serif;
+
+.footerWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: $primary-color;
+  }
+  
+.footerContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: $primary-color;
+    flex-direction: row;
+    padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 3vw, 3rem);
+    gap: clamp(1rem, 10vw, 10rem);
+    width: 100%;
+    position: relative;
+}
+
+.leftSide{
+    height: 100%;
+    gap: clamp(3rem, 5vw, 5rem);
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    width: 50%;
+}
+
+.top{
+    //background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 2rem;
+
+        h1{
+            color: $secondary-color;
+            font-family: $primary-font;
+            font-size: clamp(1rem, 3vw, 3rem);
+            font-weight: bold;
+        }
+
+        h2 {
+            color: $tertiary-color;
+            font-family: $primary-font;
+            font-size: clamp(1rem, 2vw, 2rem);
+            font-weight: 400;
+        }
+
+}
+
+.low{
+    //background-color: cadetblue;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+
+    .titleContact{
+        color: $secondary-color;
+        font-family: $primary-font;
+        font-size: clamp(1rem, 2vw, 2rem);
+        font-weight: bold;
+    }
+
+    .subtitleContact{
+        color: $tertiary-color;
+        font-family: $primary-font;
+        font-size: clamp(1rem, 1.5vw, 1.5rem);
+        font-weight: 400;
+        margin-bottom: 2.5rem;
+    }
+}
+
+.rightSide {
+    width: 50%;
+    height: 100%;
+    background-color: rgba(1, 30, 17, 0.4); /* Cor de fundo com opacidade */
+    padding: clamp(1rem, 4vw, 4rem);
+    box-sizing: border-box;
+    //border: 1px solid $tertiary-color; /* Borda branca (se necessário) */
+    box-shadow: 20px 20px 100px rgba(0, 0, 0, 1); /* Sombra sutil para dar profundidade */
+    border-radius: 8px; /* Opção para bordas arredondadas (opcional) */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+
+    
+    .titleForms{
+        color: $tertiary-color;
+        font-family: $primary-font;
+        font-size: clamp(1rem, 2vw, 2rem);
+        font-weight: bold;
+    }
+}
+  
+  .footerCopyright {
+    text-align: center;
+    padding: 1.5rem 1rem;
+    font-family: $secondary-font;
+    font-size: 0.875rem;
+    color: rgba($tertiary-color, 0.7); // cor mais suave
+    border-top: 1px solid rgba($tertiary-color, 0.2); // linha sutil acima
+  }
+  
+  @media (max-width: 768px) {
+    .footerWrapper{
+        padding: 1rem;
+    }
+
+    .footerContainer{
+        flex-direction: column;
+        width: 100%;
+    }
+    .leftSide{
+        width: 100%;
+        flex-direction: row;
+    }
+
+    .top, .low{
+        width: 50%;
+    }
+
+    .rightSide{
+        width: 100%;
+    }
+
+
+    @media (max-width: 480px) {
+        .leftSide{
+            flex-direction:column ;
+            align-items: center;
+            text-align: center;
+         }
+         .top, .low{
+            width: 100%;
+        }
+    }
+
+  }

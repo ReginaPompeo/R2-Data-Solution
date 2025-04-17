@@ -1,3 +1,5 @@
+@use 'sass:color';
+
 $primary-color: #011e11;
 $secondary-color: #00fd5e;
 $tertiary-color: #ffffff;
@@ -81,7 +83,7 @@ $secondary-font: 'Poppins', sans-serif;
 .textBlock {
   word-break: break-word; // "break-all" pode quebrar palavras no meio, deixei "break-word"
   text-align: justify;
-  color: lighten($primary-color, 10%);
+  color: color.adjust($primary-color, $lightness: 10%);
   font-family: $primary-font;
   font-weight: 400; // mais fino que o título, mas ainda legível
   font-size: clamp(0.8rem, 1vw, 1rem);// levemente menor que o título

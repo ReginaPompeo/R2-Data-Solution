@@ -14,24 +14,6 @@ $secondary-font: 'Poppins', sans-serif;
     padding: 0 3rem;
 }
 
-.topContainer {
-    display: flex; 
-    align-items: center;
-    justify-content: flex-start;
-    width: 100%;
-    min-height: 2rem;
-    max-height: 8rem;
-    padding: 1rem;
-    //background-color: aqua; // Apagar depois
-}
-
-.logo {
-    max-height: 100%;
-    width: clamp(80px, 10vw, 150px);
-    height: auto; 
-}
-
-
 .centerContainer{
     align-items: center;
     justify-content: space-between;
@@ -89,6 +71,7 @@ $secondary-font: 'Poppins', sans-serif;
 /* Ajustes para telas menores */
 @media (max-width: 768px) {
     .homeContainer {
+        margin-top: 5rem;
         padding: 0 1rem;
     }
 
