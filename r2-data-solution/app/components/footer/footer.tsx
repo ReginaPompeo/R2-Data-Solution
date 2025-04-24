@@ -1,6 +1,6 @@
 import styles from './footer.module.scss';
-import MarketingButton from '@/components/marketing_button';
-import ContactForm from '@/components/contact_form';
+import MarketingButton from '@/components/marketing_button/marketing_button';
+import ContactForm from '@/components/contact_form/contact_form';
 
 export default function Footer(){
     return(

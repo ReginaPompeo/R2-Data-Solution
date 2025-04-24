@@ -1,4 +1,4 @@
-import styles from './services.module.scss';
+import styles from './information_services.module.scss';
 import Image from 'next/image';
 import ServiceImage1 from '../../public/Service-Image-1.svg';
 import ServiceImage2 from '../../public/Service-Image-2.svg';
@@ -13,7 +13,7 @@ import ServiceIcon4 from '../../public/Service-Icon-4.svg';
 import ServiceIcon5 from '../../public/Service-Icon-5.svg';
 import ServiceIcon6 from '../../public/Service-Icon-6.svg';
 
-const services = [
+const information_services = [
     { icon: ServiceIcon1, image: ServiceImage1, text: 'Automatização de Processos' },
     { icon: ServiceIcon2, image: ServiceImage2, text: 'Automatização de Relatórios' },
     { icon: ServiceIcon3, image: ServiceImage3, text: 'Desenvolvimento de Sites'},
@@ -22,14 +22,14 @@ const services = [
     { icon: ServiceIcon6, image: ServiceImage6, text: 'Automatização de Documentos'}
 ];
 
-export default function Service(){
+export default function Information_Service(){
     return(
         <div className={styles.serviceContainer}>
             <div className={styles.title}>
                 Nossos Serviços
             </div>
             <div className={styles.blockSpace}>
-                {services.map((service, index) => (
+                {information_services.map((service, index) => (
                     <div key={index} className={styles.blockContainer}>
                         {/* Imagem de fundo */}
                         <Image 

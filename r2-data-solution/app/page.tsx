@@ -1,13 +1,13 @@
 import Home from './home/page';
-import About from './about/page';
-import Services from './services/page';
+import Services from './information_services/page';
 import Team from './team/page';
 import Differences from './differences/page';
 import Mission from './mission/page';
 import Feedback from './feedback/page';
-import Footer from './footer/page';
-import WhatsAppIcon from './components/whatsapp_icon';
-import Navbar from './components/navbar';
+import Footer from './components/footer/footer';
+import WhatsAppIcon from './components/whatsapp_icon/whatsapp_icon';
+import Navbar from './components/navbar/navbar';
+import Introduction from './introduction/page';
 
 export default function LandingPage() {
   return (
@@ -17,8 +17,8 @@ export default function LandingPage() {
     <div id="home">
       <Home />
     </div>
-    <div id="about">
-      <About />
+    <div id="introduction">
+      <Introduction />
     </div>
     <div id="services">
       <Services />

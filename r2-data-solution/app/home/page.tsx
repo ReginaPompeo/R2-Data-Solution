@@ -1,7 +1,7 @@
 import styles from './home.module.scss';
 import React from "react";
 import Image from "next/image";
-import MarketingButton from '@/components/marketing_button';
+import MarketingButton from '@/components/marketing_button/marketing_button';
 import ImageBanner from '../../public/photo-banner.svg';
 
 

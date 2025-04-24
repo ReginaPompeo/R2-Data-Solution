@@ -7,7 +7,7 @@ $secondary-font: 'Poppins', sans-serif;
 
 .missionContainer{
     background-color: $primary-color;
-    height: 100vh;
+    height: calc(100vh - 90px);
     display: flex;
     justify-content: center;
     align-items: center;

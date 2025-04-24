@@ -17,6 +17,7 @@ $secondary-font: 'Poppins', sans-serif;
     justify-content: center;
     align-items: center;
     min-height: 100vh;
+    height: calc(100vh - 92px);
     background-color: $primary-color;
     flex-direction: row;
     padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 3vw, 3rem);

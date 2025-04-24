@@ -36,7 +36,9 @@ export default function RootLayout({
         <meta httpEquiv="Content-Type" content="text/html; charset=utf-8" />
       </head>
       <body className={`${inter.className}`}>
-        {children}
+        <div style={{ marginTop: "10px", minHeight: "calc(100vh - 90px)" }}>
+          {children}
+        </div>
       </body>
     </html>
   );

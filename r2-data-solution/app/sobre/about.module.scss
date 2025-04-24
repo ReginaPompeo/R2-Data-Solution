@@ -1,0 +1,40 @@
+$primary-color: #011e11;
+$secondary-color: #00fd5e;
+$tertiary-color: #ffffff;
+
+$primary-font: 'DM Sans', sans-serif;
+$secondary-font: 'Poppins', sans-serif;
+
+.aboutContainer{
+    background-color: $secondary-color;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    gap: clamp(1rem, 3vw, 3rem);
+    padding: clamp(3rem, 6vw, 6rem) clamp(1.5rem, 3vw, 3rem);
+}
+
+.title{
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-weight: bold;
+}
+
+.text{
+    text-align: justify;
+    color: $primary-color;
+    font-family: $primary-font;
+    font-size: clamp(1.5rem, 2vw, 2rem);
+}
+
+
+@media (max-width: 768px) {
+    .title{
+        font-size: clamp(1rem, 3vw, 2.5rem);
+    }
+    
+    .text{
+        font-size: clamp(1.5rem, 2.5vw, 2rem);
+    }
+}

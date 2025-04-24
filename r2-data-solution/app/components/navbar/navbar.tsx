@@ -3,10 +3,13 @@
 import React, { useState } from 'react';
 import styles from './navbar.module.scss';
 import Image from 'next/image';
-import Logo from '../../public/logo-r2.svg';
+import Logo from '../../../public/logo-r2.svg';
+import Link from 'next/link';
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
+
+  const handleCloseMenu = () => setMenuOpen(false);
 
   return (
     <div className={styles.navbar}>
@@ -28,9 +31,9 @@ export default function Navbar() {
         <div className={styles.mobileMenu}>
           <button className={styles.closeBtn} onClick={() => setMenuOpen(false)}>❌</button>
           <nav className={styles.mobileNavLinks}>
-            <a href="#home" onClick={() => setMenuOpen(false)}>Início</a>
-            <a href="#about" onClick={() => setMenuOpen(false)}>Sobre</a>
-            <a href="#services" onClick={() => setMenuOpen(false)}>Serviços</a>
+            <Link href="/" onClick={handleCloseMenu}>Início</Link>
+            <Link href="/sobre">Sobre</Link>
+            <a href="/servicos" onClick={() => setMenuOpen(false)}>Serviços</a>
             <a href="#team" onClick={() => setMenuOpen(false)}>Equipe</a>
             <a href="#contact" onClick={() => setMenuOpen(false)}>Contato</a>
           </nav>
@@ -39,9 +42,9 @@ export default function Navbar() {
 
       {/* Links visíveis apenas em telas grandes */}
       <div className={styles.navLinks}>
-        <a href="#home">Início</a>
-        <a href="#about">Sobre</a>
-        <a href="#services">Serviços</a>
+        <Link href="/">Início</Link>
+        <Link href="/sobre">Sobre</Link>
+        <Link href="/servicos">Serviços</Link>
         <a href="#team">Equipe</a>
         <a href="#contact">Contato</a>
       </div>

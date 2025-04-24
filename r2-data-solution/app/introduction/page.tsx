@@ -1,10 +1,10 @@
-import styles from './about.module.scss';
+import styles from './introduction.module.scss';
 import Image from "next/image";
 import ImageBanner2 from '../../public/photo-banner-2.svg';
 
-export default function About() {
+export default function Introduction() {
     return (
-        <div className={styles.aboutContainer}>
+        <div className={styles.introductionContainer}>
             <div className={styles.leftContainer}>
                 <Image src={ImageBanner2} alt="Banner" className={styles.banner} />
             </div>

@@ -5,7 +5,7 @@ $tertiary-color: #ffffff; // branco
 .navbar {
   width: 100%;
   padding: 1rem 2rem;
-  background-color: #011e11;
+  background-color: $primary-color ;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -13,6 +13,7 @@ $tertiary-color: #ffffff; // branco
   top: 0;
   left: 0;
   z-index: 1000;
+  height: 90px;
 }
 
 .logoContainer {
@@ -65,7 +66,7 @@ $tertiary-color: #ffffff; // branco
       bottom: -2px;
       width: 0%;
       height: 2px;
-      background-color: #00fd5e;
+      background-color: $primary-color;
       transition: width 0.3s ease;
     }
 
@@ -74,7 +75,7 @@ $tertiary-color: #ffffff; // branco
     }
 
     &:hover {
-      color: #00fd5e;
+      color: $primary-color;
     }
   }
 }
@@ -91,7 +92,7 @@ $tertiary-color: #ffffff; // branco
     left: 0;
     width: 100%;
     height: 100vh;
-    background-color: $secondary-color;
+    background-color: $primary-color;
     z-index: 2000;
     padding: 2rem;
   }
