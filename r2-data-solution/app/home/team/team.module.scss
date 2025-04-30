@@ -10,7 +10,7 @@ $secondary-font: 'Poppins', sans-serif;
     //background-color: blue;  COR TESTE
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     justify-content: center;
     align-items: center;
     padding: clamp(2rem, 5vw, 6rem) clamp(1rem, 3vw, 3rem);
@@ -34,17 +34,18 @@ $secondary-font: 'Poppins', sans-serif;
     justify-content: center;
     align-items: center;
     gap: clamp(2rem, 15vw, 15rem);
-    padding: 0 clamp(1rem, 2vw, 2rem);
+    padding: 0 1rem;
     height: 100%;
 }
 
 .blockContainer{
     //background-color: #00fd5e; COR TESTE
-    width: clamp(280px, 30vw, 400px);
+    width: clamp(100px, 20vw, 500px);
     max-width: 100%;
     background-color: $primary-color;
     justify-content: center;
     align-items: center;
+    padding: 1rem;
 }
 
 .imageSpace{
@@ -75,7 +76,7 @@ $secondary-font: 'Poppins', sans-serif;
     text-align: center;
     color: $tertiary-color;
     font-family: $secondary-font;
-    font-size: clamp(0.8rem, 1vw, 1rem);
+    font-size: clamp(0.5rem, 1vw, 1rem);
     font-weight: 300;
     text-transform: uppercase;
     letter-spacing: 0.5px;

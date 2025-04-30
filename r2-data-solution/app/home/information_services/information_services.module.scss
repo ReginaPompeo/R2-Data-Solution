@@ -8,7 +8,7 @@ $secondary-font: 'Poppins', sans-serif;
 .serviceContainer{
     display: flex;
     align-items: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     flex-direction: column;
     padding: clamp(2rem, 5vw, 6rem) clamp(1rem, 3vw, 3rem);
     gap: clamp(1rem, 10vw, 5rem);

@@ -1,6 +1,6 @@
 import styles from './team.module.scss'
 import Image from 'next/image';
-import ImageTeam1 from '../../public/Image-Team-1.svg';
+import ImageTeam1 from '../../../public/Image-Team-1.svg';
 
 const team = [
     { image: ImageTeam1, name: 'Regina Pompeo', text: 'Formada em Análise e Desenvolvimento de Sistemas' },

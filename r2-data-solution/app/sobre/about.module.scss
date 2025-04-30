@@ -11,13 +11,13 @@ $secondary-font: 'Poppins', sans-serif;
     display: flex;
     flex-direction: column;
     gap: clamp(1rem, 3vw, 3rem);
-    padding: clamp(3rem, 6vw, 6rem) clamp(1.5rem, 3vw, 3rem);
+    padding: clamp(2rem, 8vw, 8rem) clamp(1.5rem, 3vw, 3rem);
 }
 
 .title{
     color: $primary-color;
     font-family: $primary-font;
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(1.5rem, 2vw, 2.5rem);
     font-weight: bold;
 }
 
@@ -25,7 +25,8 @@ $secondary-font: 'Poppins', sans-serif;
     text-align: justify;
     color: $primary-color;
     font-family: $primary-font;
-    font-size: clamp(1.5rem, 2vw, 2rem);
+    font-size: clamp(1rem, 1.5vw, 1.5rem);
+    text-align: justify;
 }
 
 

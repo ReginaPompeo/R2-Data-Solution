@@ -1,6 +1,6 @@
 import styles from './introduction.module.scss';
 import Image from "next/image";
-import ImageBanner2 from '../../public/photo-banner-2.svg';
+import ImageBanner2 from '../../../public/photo-banner-2.svg';
 
 export default function Introduction() {
     return (

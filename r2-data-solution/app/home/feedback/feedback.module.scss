@@ -7,8 +7,8 @@ $secondary-font: 'Poppins', sans-serif;
 
 .feedbackContainer {
     display: flex;
-    min-height: 100vh;
-    height: calc(100vh - 92px);
+    //min-height: 100vh;
+    height: calc(100vh - 80px);
     background-color: $secondary-color;
     flex-direction: row;
     padding: clamp(2rem, 4vw, 4rem) clamp(1rem, 3vw, 3rem);

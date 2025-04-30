@@ -1,28 +1,35 @@
-import styles from './home.module.scss';
-import React from "react";
-import Image from "next/image";
-import MarketingButton from '@/components/marketing_button/marketing_button';
-import ImageBanner from '../../public/photo-banner.svg';
+import Home from './hero/page';
+import Services from './information_services/page';
+import Team from './team/page';
+import Differences from './differences/page';
+import Mission from './mission/page';
+import Feedback from './feedback/page';
+import Introduction from './introduction/page';
 
-
-export default function Home(){
-    return (
-        <div className={styles.homeContainer}> 
-            <div className={styles.centerContainer}>
-                <div className={styles.leftContainer}>
-                    <div className={styles.title}>
-                        Deixe a automação trabalhar para você.
-                    </div>
-                    <div className={styles.buttonContainer}>
-                        <MarketingButton phone="5511992391941" message="Olá! Quero saber mais sobre os serviços." />
-                    </div>  
-                </div>
-                <div className={styles.rightContainer}>
-                    <div>
-                        <Image src={ImageBanner} alt="Banner" className={styles.banner} />
-                    </div>
-                </div>
-            </div>
-        </div>
-    )
-};
+export default function LandingPage() {
+  return (
+   <div>
+    <div id="home">
+      <Home />
+    </div>
+    <div id="introduction">
+      <Introduction />
+    </div>
+    <div id="services">
+      <Services />
+    </div>
+    <div id="team">
+      <Team/>
+    </div>
+    <div id="differences">
+      <Differences/>
+    </div>
+    <div id="mission">
+      <Mission/>
+    </div>
+    <div id="feedback">  
+      <Feedback/>
+    </div>
+   </div>
+  );
+}

@@ -1,8 +1,8 @@
 import styles from './differences.module.scss';
 import Image from 'next/image';
-import icon1 from '../../public/Service-Icon-1.svg';
-import icon2 from '../../public/Service-Icon-1.svg';
-import icon3 from '../../public/Service-Icon-1.svg';
+import icon1 from '../../../public/Service-Icon-1.svg'
+import icon2 from '../../../public/Service-Icon-1.svg'
+import icon3 from '../../../public/Service-Icon-1.svg'
 
 const differences = [
     { icon: icon1, title: 'Soluções Sob Medida', text: 'Cada negócio é único. Por isso, oferecemos soluções de automação e sites sob medida para você.' },

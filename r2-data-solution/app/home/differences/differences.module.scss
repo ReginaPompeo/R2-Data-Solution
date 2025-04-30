@@ -12,7 +12,7 @@ $secondary-font: 'Poppins', sans-serif;
     background-color: $tertiary-color;
     justify-content: center;
     align-items: center;
-    min-height: 100vh;
+    min-height: calc(100vh - 80px);
     //background-color: chocolate;
     flex-direction: column;
     padding: clamp(2rem, 5vw, 6rem) clamp(1rem, 3vw, 3rem);

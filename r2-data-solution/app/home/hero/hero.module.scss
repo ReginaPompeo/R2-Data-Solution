@@ -6,9 +6,10 @@ $primary-font: 'DM Sans', sans-serif;
 $secondary-font: 'Poppins', sans-serif;
 
 
-.homeContainer{
+.heroContainer{
     display: flex;
     height: 100vh;
+    //margin-top: 10px;
     background-color: $primary-color;
     flex-direction: column;
     width: 100%;
@@ -21,6 +22,7 @@ $secondary-font: 'Poppins', sans-serif;
     grid-template-columns: 50% 50%;
     height: 100%;
     //background-color: brown; // Apagar depois
+    margin-top: 1rem;
 }
 
 .leftContainer{
